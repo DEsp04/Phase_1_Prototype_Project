@@ -31,8 +31,6 @@ response();
 
 
 //Click title, save id number to local storage
-
-
 document.getElementById('title_section').addEventListener('click', (e) => { 
   let reportId = e.target.id;
   console.log(reportId.id)
@@ -72,7 +70,7 @@ document.getElementById('prevTitle').addEventListener('click', async (e) => {
       document.getElementById('title_section').innerHTML = ""
       const reponseTitleTwo = responseThree.data.data
       for (let i = 0; i < reponseTitleTwo.length; i++) {
-        document.getElementById('title_section').innerHTML += `<li id = ${reponseTitleTwo[i].id}><a href = './reportsinfo.html'>${reponseTitleTwo[i].fields.title}</a></li>`
+        document.getElementById('title_section').innerHTML += `<li><a href = './reportsinfo.html' id = ${reponseTitleTwo[i].id}>${reponseTitleTwo[i].fields.title}</a></li>`
       }
     }
     if (num === 0) { 
@@ -120,7 +118,7 @@ document.getElementById('nextTitle').addEventListener('click', async (e) => {
       document.getElementById('title_section').innerHTML = ""
       const reponseTitleTwo = responseThree.data.data
       for (let i = 0; i < reponseTitleTwo.length; i++) {
-        document.getElementById('title_section').innerHTML += `<li id = ${reponseTitleTwo[i].id}><a href = './reportsinfo.html'>${reponseTitleTwo[i].fields.title}</a></li>`
+        document.getElementById('title_section').innerHTML += `<li><a href = './reportsinfo.html' id = ${reponseTitleTwo[i].id}>${reponseTitleTwo[i].fields.title}</a></li>`
       }
     }
   
