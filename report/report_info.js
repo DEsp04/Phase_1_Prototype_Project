@@ -9,7 +9,7 @@ const reportIdByIdUrl = `https://api.reliefweb.int/v1/reports/${titleId}`
 
 let responseTwo = async function () { 
   await axios.get(reportIdByIdUrl).then(res => { 
-    console.log(res.data.data[0].fields.title)
+    console.log(res.data.data)
 
     let responseTitle = res.data.data[0].fields.title;
     let responseBody = res.data.data[0].fields['body-html'];
