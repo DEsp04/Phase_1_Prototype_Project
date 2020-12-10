@@ -72,24 +72,47 @@ nav a:hover {
 
 /* All three images on index.html */
 
+#content {
+  position: relative;
+}
+
 .imgsize {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 #imgsize1 {
   background-image: url(image/united.jpeg);
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+
 }
 
 #imgsize2 {
   background-image: url(image/children.jpg);
-
 }
 
 #imgsize3 {
   background-image: url(image/medicalsupplies.jpg);
+  left: 50%;
+  position: relative;
+  transform: translate(-50%);
+
+}
+
+#flex{
+  display: flex;
+}
+
+#right-content {
+  width: 40%;
+  
+}
+
+#left-content {
+  width: 60%;
 }
