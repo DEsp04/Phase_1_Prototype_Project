@@ -69,3 +69,27 @@ nav a:hover {
   color: white;
   padding: 4px 20px;
 }
+
+/* All three images on index.html */
+
+.imgsize {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#imgsize1 {
+  background-image: url(image/united.jpeg);
+}
+
+#imgsize2 {
+  background-image: url(image/children.jpg);
+
+}
+
+#imgsize3 {
+  background-image: url(image/medicalsupplies.jpg);
+}
