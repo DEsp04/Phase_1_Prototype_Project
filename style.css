@@ -216,15 +216,13 @@ select {
   border: none;
   text-align: center;
   font-size: 0.8vw;
+  outline: none;
 }
 
 #getReports:hover {
   background-color: #CAD0DE;
   color: #28BFE6;
 }
-
-
-
 
 /* All three images on index.html */
 
@@ -267,6 +265,36 @@ select {
 }
 
 #right-content {
-  width: 40%;
-  
+  width: 40%; 
+}
+
+
+/* Section below is to style reports.html */
+h2 {
+  position: relative;
+  top: 30px;
+}
+
+#info {
+  background-color: white;
+  border-radius: 6px;
+  position: relative;
+  top: 70px;
+  margin: 0 8%;
+}
+
+
+#title_section {
+  list-style-type: none;
+  padding: 0 1%;
+  font-size: 1.2vw
+}
+
+#title_section li:not(:last-child) {
+  border-bottom: 2px #E5E5E5 solid;
+}
+
+#title_section a {
+  text-decoration: none;
+
 }
