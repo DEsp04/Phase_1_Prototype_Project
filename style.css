@@ -90,10 +90,20 @@ nav a:hover {
 .inner-container{
   display: flex;
   flex-direction: column;
+  width: calc(30% - 30px);
+
 }
 
 input[type='text'] {
   outline:none;
+}
+
+
+#reportText {
+  border-bottom: 1px solid black;
+  font-size: 16px;
+  color: black;
+  height: 32px;
 }
 
 
@@ -117,6 +127,11 @@ select {
 
 .selectionStyle {
   position: relative;
+  height: 32px;
+  margin: 0;
+  margin-right: 25px;
+  position: relative;
+  float: right;
 }
 
 
@@ -141,19 +156,56 @@ select {
   right: 0;
   width: 30px;
   height: 32px;
-  
+  background-color: white;
+  background-image: url(image/down-arrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
   z-index: 0;
   border-right: 1px solid black;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
 
+.selectionStyle .selection-box {
+  width: 100%;
+  height: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  padding: 5px 15px;
+}
 
 
+/* Search button */
 
 #searchButton {
   display: flex;
   flex-direction: column-reverse;
+}
+
+#getReports {
+  padding: 8% 22%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  transition: .3s ease;
+  background-color: #28BFE6;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+}
+
+#getReports:hover {
+  background-color: #DBE7F4;
+  color: #28BFE6;
 }
 
 
