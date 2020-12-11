@@ -83,6 +83,82 @@ nav a:hover {
   font-size: 1.4vw;
 }
 
+.outer-container {
+  display: flex;
+}
+
+.inner-container{
+  display: flex;
+  flex-direction: column;
+}
+
+input[type='text'] {
+  outline:none;
+}
+
+
+select {
+  outline: none;
+}
+
+#selection {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    width: calc(100% - 30px);
+    background: #fff;
+    z-index: 0;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.selectionStyle {
+  position: relative;
+}
+
+
+.selectionStyle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    width: calc(100% - 30px);
+    background: #fff;
+    z-index: 0;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.selectionStyle::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 32px;
+  
+  z-index: 0;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+
+
+
+#searchButton {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+
+
 /* All three images on index.html */
 
 #content {
