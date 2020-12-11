@@ -75,6 +75,7 @@ document.getElementById('prevTitle').addEventListener('click', async (e) => {
     }
     if (num === 0) { 
       newA2.textContent = "";
+      newA2.removeAttribute("id", 'prevTitle2')
     }
   
   } catch (e) { 
@@ -98,7 +99,7 @@ document.getElementById('info').appendChild(pageInfo);
 
 document.getElementById('nextTitle').addEventListener('click', async (e) => {
   //add second id name to prev button
-  newA2.setAttribute("id", 'prevTitle2')
+  newA2.setAttribute("id", 'prevTitle2');
     
   try {
     newA2.textContent = "prev";

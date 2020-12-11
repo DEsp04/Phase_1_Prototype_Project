@@ -344,10 +344,20 @@ select {
 
 #report_information{
   margin-top: 4%;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 8%;
+  margin-right: 8%;
   background-color: white;
   padding: 2px 0;
+}
+
+#report_information h1 {
+  background-color: none;
+  font-size: inherit;
+  margin: 0;
+  color: black;
+  padding: 0;
+  text-align: inherit;
+  width: inherit;
 }
 
 #report_information p {
