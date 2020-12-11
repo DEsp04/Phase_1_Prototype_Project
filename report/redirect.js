@@ -97,8 +97,8 @@ pageInfo.setAttribute("id", 'pageInfo');
 document.getElementById('info').appendChild(pageInfo);
 
 document.getElementById('nextTitle').addEventListener('click', async (e) => {
-
-  
+  //add second id name to prev button
+  newA2.setAttribute("id", 'prevTitle2')
     
   try {
     newA2.textContent = "prev";

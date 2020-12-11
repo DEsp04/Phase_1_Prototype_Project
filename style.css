@@ -270,17 +270,22 @@ select {
 
 
 /* Section below is to style reports.html */
-h2 {
+.header2_for_other {
   position: relative;
   top: 30px;
+  font-size: 1.8vw;
+  margin-left: 2%;
+  border-left: #28BFE6 solid 10px;
+  text-indent: 1%;
 }
 
 #info {
   background-color: white;
   border-radius: 6px;
   position: relative;
-  top: 70px;
+  top: 45px;
   margin: 0 8%;
+  margin-bottom: 8%;
 }
 
 
@@ -294,7 +299,74 @@ h2 {
   border-bottom: 2px #E5E5E5 solid;
 }
 
+#title_section li {
+  padding: 2% 3%;
+}
+
+#title_section li:last-child {
+  padding-bottom: 0;
+}
+
 #title_section a {
   text-decoration: none;
+  color: black;
+}
 
+#title_section a:hover {
+  color: red;
+}
+
+#prevTitle2, #nextTitle {
+  position: relative;
+  top: 80px;
+  left: 42%;
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+  margin-bottom: 10px;
+  background-color: #28BFE6;
+  padding: 1% 2%;
+  border-radius: 50%;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  font-size: 1vw;
+} 
+
+#nextTitle {
+  margin-left: 2.5%;
+}
+
+#prevTitle2 {
+  margin-right: 2.5%;
+}
+
+/* Following style is for reportinfo.html */
+
+#report_information{
+  margin-top: 4%;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: white;
+  padding: 2px 0;
+}
+
+#report_information p {
+  padding: 0 12px;
+}
+
+#report_information h3 {
+  padding-left: 10px;
+}
+
+#back_link {
+  position: relative;
+  display: inline-block;
+  top: 30px;
+  left: 81%;
+  transform: translate(-50%, -50%);
+  background-color: #CAD0DE;
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
+  padding: 0.5% 1%;
 }

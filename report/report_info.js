@@ -13,7 +13,7 @@ let responseTwo = async function () {
 
     let responseTitle = res.data.data[0].fields.title;
     let responseBody = res.data.data[0].fields['body-html'];
-    console.log(responseBody)
+    // console.log(responseBody)
     
 
     if (responseBody === undefined) {
