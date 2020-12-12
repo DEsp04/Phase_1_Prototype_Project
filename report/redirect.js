@@ -134,3 +134,5 @@ document.getElementById('nextTitle').addEventListener('click', async (e) => {
 document.querySelector('.hamburger').addEventListener('click', () => {
 	document.getElementById("myDropdown").classList.toggle("show");
 })
+
+
