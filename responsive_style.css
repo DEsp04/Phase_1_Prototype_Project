@@ -4,6 +4,11 @@
     padding: 21px 12px;   
     font-size: 5vw;
   }
+  
+  h1::first-letter {
+    color: #f09f54;
+    font-size: 6vw;
+  }
 
   nav ul {
     display: none;
@@ -222,7 +227,12 @@
 
   header h1 {
     padding: 20px 10px;   
-    font-size: 4.5vw;
+    font-size: 4vw;
+  }
+
+  h1::first-letter {
+    color: #f09f54;
+    font-size: 5vw;
   }
 
   nav ul {
