@@ -48,3 +48,11 @@ let countryResponse = async function () {
 }
 
 countryResponse();
+
+
+//Below is the code to open the nav up when hamburger icon is clicked
+
+document.querySelector('.hamburger').addEventListener('click', () => {
+	document.getElementById("myDropdown").classList.toggle("show");
+})
+

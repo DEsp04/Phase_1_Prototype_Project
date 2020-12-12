@@ -11,15 +11,67 @@
 
   .hamburger {
     position: relative;
-    top: 14px;
-    height: 33px;
+    top: 22px;
+    height: 1%;
     margin-right: 2.25rem;
-    font-size: 7.2vw;
+    font-size: 4.2vw;
     color: black;
     border: red 2px solid;
     border-radius: 2px;
     padding: 2px 4px;
   }
+
+  /* for hamburger to pop up when clicked */
+  .ham-dropdowncontent {
+    font-size: 3vw;
+    position: absolute;
+    width: 360%;
+    top: 110%;
+    right: -20px;
+    list-style-type: none;
+    box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.2);
+    margin: 0;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  #myDropdown a {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 4px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+
+  #myDropdown a:hover {
+   color: white;
+   background-color: red;
+  }
+
+
+
+  #myDropdown li:not(:last-child) {
+    border-bottom: 2px #E5E5E5 solid;
+  }
+
+  #mark1 {
+    background-color: red;
+  }
+
+  #mark1 a {
+    color: white;
+  }
+
+  
+
 
   #right-content {
     width: 100%;
@@ -64,7 +116,7 @@
   
   #reportText, .selectionStyle, .selectionStyle::before, .selectionStyle::after, .selection-box {
     height: 26px;
-    font-size: 3vw;
+    font-size: 2.2vw;
   }
 
   #organization span {
@@ -76,7 +128,7 @@
   }
 
   .selectionStyle .selection-box {
-    font-size: 3vw;
+    font-size: 2.2vw;
     height: 26px;
   }
 
@@ -84,12 +136,223 @@
     font-size: 3vw;
   }
 
+  /* styling for report page */
+
+  .header2_for_other {
+    font-size: 4.8vw
+  }
+
+  #title_section {
+    font-size: 4.2vw;
 }
+
+  #prevTitle2, #nextTitle {
+    font-size: 1rem;
+    margin: 0;
+    position: absolute;
+    top: 240px;
+    width: 35px;
+    height: 35px;
+    padding: 6px 0;
+  }
+
+  #prevTitle2 {
+    left: -8%;
+  }
+
+  #nextTitle {
+    left: 108%;
+  }
+
+  #info{
+    margin: 0 13%;
+  }
+
+    /* styling reportsinfo */
+
+    #report_information {
+      margin-top: 14%;
+    }
+  
+    #back_link {
+      left: 71%;
+    }
+  
+    /* for hamburger to pop up when clicked */
+    .ham-dropdowncontent {
+      font-size: 3vw;
+      position: absolute;
+      width: 360%;
+      top: 110%;
+      right: -20px;
+      list-style-type: none;
+      box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.2);
+      margin: 0;
+      background-color: white;
+      margin: 0px;
+      padding: 0px;
+      z-index: 1;
+      display: none;
+    }
+  
+    .show {
+      display: block;
+    }
+  
+
+}
+
+
+
+
+
 
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  header h1 {
+    padding: 21px 12px;   
+    font-size: 5vw;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .hamburger {
+    position: relative;
+    top: 22px;
+    height: 1%;
+    margin-right: 2.25rem;
+    font-size: 4.2vw;
+    color: black;
+    border: red 2px solid;
+    border-radius: 2px;
+    padding: 2px 4px;
+  }
+
+  /* for hamburger to pop up when clicked */
+  .ham-dropdowncontent {
+    font-size: 3vw;
+    position: absolute;
+    width: 360%;
+    top: 110%;
+    right: -20px;
+    list-style-type: none;
+    box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.2);
+    margin: 0;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  #myDropdown a {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 4px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+
+  #myDropdown a:hover {
+   color: white;
+   background-color: red;
+  }
+
+
+
+  #myDropdown li:not(:last-child) {
+    border-bottom: 2px #E5E5E5 solid;
+  }
+
+  #mark1 {
+    background-color: red;
+  }
+
+  #mark1 a {
+    color: white;
+  }
+
+  
+
+
+  #right-content {
+    width: 100%;
+  }
+
+  #flex {
+    flex-direction: column-reverse;
+    margin: 18px 5px;
+  }
+
+  #imgsize2, #imgsize3 {
+    display: none;
+  }
+  
+  #imgsize1 {
+    width: 160px;
+    height: 160px;
+    margin: 0;
+  }
+
+  #left-content {
+    width: 100%;
+    margin: 0;
+  }
+
+  #left-content h2 {
+    margin: 0px;
+    font-size: 5vw;
+  }
+
+  #left-content p {
+    font-size: 3.4vw;
+  }
+
+  .inner-container {
+    width: 50%;
+  }
+
+  .inner-container .selectionStyle {
+    width: 100%;
+  }
+  
+  #reportText, .selectionStyle, .selectionStyle::before, .selectionStyle::after, .selection-box {
+    height: 26px;
+    font-size: 2.2vw;
+  }
+
+  #organization span {
+    display: none;
+  }
+
+  #organization:after {
+    content: 'Organization';
+  }
+
+  .selectionStyle .selection-box {
+    font-size: 2.2vw;
+    height: 26px;
+  }
+
+  #getReports {
+    font-size: 3vw;
+  }
+
+
+
+
+
+
+
 
 }
 
