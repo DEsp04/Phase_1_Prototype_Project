@@ -11,7 +11,7 @@ let orgValue = localStorage.getItem('org-value');
 
 
 // const reportUrl = `https://api.reliefweb.int/v1/reports?appname=apidoc&query[value]=${searchReport}`
-const reportUrl = `https://api.reliefweb.int/v1/reports?appname=apidoc&${searchReport}&filter[operator]=AND&filter[conditions][0][operator]=AND&filter[conditions][0][conditions][0][field]=country.name&filter[conditions][0][conditions][0][value]=${countryValue}&filter[conditions][0][conditions][1][operator]=AND&filter[conditions][0][conditions][1][field]=language.id&filter[conditions][0][conditions][1][value]=${langValue}&filter[conditions][2][field]=source.type.id&filter[conditions][2][value]=${orgValue}&filter[conditions][3][field]=disaster.type.id&filter[conditions][3][value]=${disasterValue}`
+const reportUrl = `https://api.reliefweb.int/v1/reports?appname=apidoc&query[value]=${searchReport}&filter[operator]=AND&filter[conditions][0][operator]=AND&filter[conditions][0][conditions][0][field]=country.name&filter[conditions][0][conditions][0][value]=${countryValue}&filter[conditions][0][conditions][1][operator]=AND&filter[conditions][0][conditions][1][field]=language.id&filter[conditions][0][conditions][1][value]=${langValue}&filter[conditions][2][field]=source.type.id&filter[conditions][2][value]=${orgValue}&filter[conditions][3][field]=disaster.type.id&filter[conditions][3][value]=${disasterValue}`
 
 console.log(reportUrl);
 
@@ -77,7 +77,7 @@ document.getElementById('prevTitle').addEventListener('click', async (e) => {
 
     // pageInfo.textContent = `${num} of ${reportsNum + num}`//********
 
-    const responseThree = await axios.get(`https://api.reliefweb.int/v1/reports?appname=apidoc&${searchReport}&filter[operator]=AND&filter[conditions][0][operator]=AND&filter[conditions][0][conditions][0][field]=country.name&filter[conditions][0][conditions][0][value]=${countryValue}&filter[conditions][0][conditions][1][operator]=AND&filter[conditions][0][conditions][1][field]=language.id&filter[conditions][0][conditions][1][value]=${langValue}&filter[conditions][2][field]=source.type.id&filter[conditions][2][value]=${orgValue}&filter[conditions][3][field]=disaster.type.id&filter[conditions][3][value]=${disasterValue}&offset=${num}&limit=10`);
+    const responseThree = await axios.get(`https://api.reliefweb.int/v1/reports?appname=apidoc&query[value]=${searchReport}&filter[operator]=AND&filter[conditions][0][operator]=AND&filter[conditions][0][conditions][0][field]=country.name&filter[conditions][0][conditions][0][value]=${countryValue}&filter[conditions][0][conditions][1][operator]=AND&filter[conditions][0][conditions][1][field]=language.id&filter[conditions][0][conditions][1][value]=${langValue}&filter[conditions][2][field]=source.type.id&filter[conditions][2][value]=${orgValue}&filter[conditions][3][field]=disaster.type.id&filter[conditions][3][value]=${disasterValue}&offset=${num}&limit=10`);
     console.log(responseThree.data);
 
     if (num >= 0) {
@@ -121,7 +121,7 @@ document.getElementById('nextTitle').addEventListener('click', async (e) => {
     
     console.log(num);
 
-    const responseThree = await axios.get(`https://api.reliefweb.int/v1/reports?appname=apidoc&${searchReport}&filter[operator]=AND&filter[conditions][0][operator]=AND&filter[conditions][0][conditions][0][field]=country.name&filter[conditions][0][conditions][0][value]=${countryValue}&filter[conditions][0][conditions][1][operator]=AND&filter[conditions][0][conditions][1][field]=language.id&filter[conditions][0][conditions][1][value]=${langValue}&filter[conditions][2][field]=source.type.id&filter[conditions][2][value]=${orgValue}&filter[conditions][3][field]=disaster.type.id&filter[conditions][3][value]=${disasterValue}&offset=${num}&limit=10`);
+    const responseThree = await axios.get(`https://api.reliefweb.int/v1/reports?appname=apidoc&query[value]=${searchReport}&filter[operator]=AND&filter[conditions][0][operator]=AND&filter[conditions][0][conditions][0][field]=country.name&filter[conditions][0][conditions][0][value]=${countryValue}&filter[conditions][0][conditions][1][operator]=AND&filter[conditions][0][conditions][1][field]=language.id&filter[conditions][0][conditions][1][value]=${langValue}&filter[conditions][2][field]=source.type.id&filter[conditions][2][value]=${orgValue}&filter[conditions][3][field]=disaster.type.id&filter[conditions][3][value]=${disasterValue}&offset=${num}&limit=10`);
     console.log(responseThree.data);
 
     // let totalCount = responseThree.data.totalCount
