@@ -66,6 +66,8 @@ newA2.textContent = "";
 document.getElementById('info').appendChild(newA2);
 
 document.getElementById('prevTitle').addEventListener('click', async (e) => {
+  //to keep the id on when user reach the last page and the arrow disappears
+  newA1.setAttribute("id", 'nextTitle');
 
   try {
     num -= 10;
@@ -126,14 +128,25 @@ document.getElementById('nextTitle').addEventListener('click', async (e) => {
     // reportsNum = totalCount - num;
 
     // pageInfo.textContent = `${num} of ${reportsNum}`
+    let totalCount = Math.ceil((responseThree.data.totalCount + 1) / 10) * 10;
+    console.log(totalCount);
 
-    if (num <= responseThree.data.totalCount) {
+
+    if (num < totalCount) {
       document.getElementById('title_section').innerHTML = ""
-      const reponseTitleTwo = responseThree.data.data
+      const reponseTitleTwo = responseThree.data.data  
       for (let i = 0; i < reponseTitleTwo.length; i++) {
         document.getElementById('title_section').innerHTML += `<li><a href = './reportsinfo.html' id = ${reponseTitleTwo[i].id}>${reponseTitleTwo[i].fields.title}</a></li>`
-      }
+      } 
     }
+    
+    //On last page, next arrow will dissapear
+    if (num === totalCount-10) {
+      newA1.removeAttribute("id", 'nextTitle');
+      console.log("stop")
+    }
+
+
   
   } catch (e) { 
     console.log(e)
