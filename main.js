@@ -106,7 +106,6 @@ document.getElementById("disasterSelect").addEventListener("change", (e) => {
     disasterText = e.target.options[e.target.selectedIndex].text;
   }
     
-    
   localStorage.setItem('disaster-text', disasterText);
 })
  
